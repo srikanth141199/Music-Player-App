@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light blue background */
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;  
+    color: #678dc2;
+}
+
+.heading h1 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.headingBtn{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.all-songs,
+.song-card,
+.playlist {
+    width: 30%;
+    background-color: #a2ccde; /* White background for each card */
+    padding: 15px;
+    margin-bottom: 20px; /* White gap between the cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
+    border-radius: 5%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.song-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional Dark Theme */
+body[data-theme="dark"] {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Additional Light Theme */
+body[data-theme="light"] {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.headingBtn[data-theme="light"] {
+    color: #fff;
+    background-color: #222;
+}
+
+.headingBtn[data-theme="dark"] {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+li button {
+    background-color: #33458a;
+    color: white;
+    border: none;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+li button:hover {
+    background-color: #1e1b56; /* Darker green color on hover */
+}
+
+.btn,
+#genreFilter {
+    background-color: #33458a;
+    color: white;
+    border: none;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn{
+        background-color: #1e1b56; /* Darker green color on hover */
+    }
+
+.btnDiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+/* Basic Input Style */
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 40%;
+    font-size: 16px;
+}
+
+/* Hover Effect */
+input:hover {
+    border-color: #333;
+}
+
+/* Focus Effect */
+input:focus {
+    outline: none;
+    border-color: #1e1b56;
+    box-shadow: 0 0 5px rgba(3, 3, 43, 0.7);
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Disabled State */
+input:disabled {
+    background-color: #f2f2f2;
+    color: #888;
+}
